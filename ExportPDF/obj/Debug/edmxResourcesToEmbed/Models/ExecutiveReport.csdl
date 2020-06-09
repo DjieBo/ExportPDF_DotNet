@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ReportModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ExecutiveReport">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="area" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="totalkomponen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pembersihan1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pembersihan2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pembersihan3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="perbaikan1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="perbaikan2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="perbaikan3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="penggantian1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="penggantian2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="penggantian3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="ReportEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ExecutiveReports" EntityType="Self.ExecutiveReport" />
+  </EntityContainer>
+</Schema>

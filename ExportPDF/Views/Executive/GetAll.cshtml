@@ -1,0 +1,53 @@
+﻿@model IEnumerable<ExportPDF.Models.ExecutiveReport>
+
+<h2>Export To PDF</h2>
+
+<p>
+    @Html.ActionLink("Print", "PrintAll")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.area)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.totalkomponen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pembersihan1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pembersihan2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.perbaikan1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.perbaikan2)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.area)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.totalkomponen)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pembersihan1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pembersihan2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.perbaikan1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.perbaikan2)
+        </td>
+    </tr>
+}
+
+</table>

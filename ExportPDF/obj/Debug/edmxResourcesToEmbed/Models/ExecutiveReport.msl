@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ReportModelStoreContainer" CdmEntityContainer="ReportEntities">
+    <EntitySetMapping Name="ExecutiveReports">
+      <EntityTypeMapping TypeName="ReportModel.ExecutiveReport">
+        <MappingFragment StoreEntitySet="ExecutiveReport">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="area" ColumnName="area" />
+          <ScalarProperty Name="totalkomponen" ColumnName="totalkomponen" />
+          <ScalarProperty Name="pembersihan1" ColumnName="pembersihan1" />
+          <ScalarProperty Name="pembersihan2" ColumnName="pembersihan2" />
+          <ScalarProperty Name="pembersihan3" ColumnName="pembersihan3" />
+          <ScalarProperty Name="perbaikan1" ColumnName="perbaikan1" />
+          <ScalarProperty Name="perbaikan2" ColumnName="perbaikan2" />
+          <ScalarProperty Name="perbaikan3" ColumnName="perbaikan3" />
+          <ScalarProperty Name="penggantian1" ColumnName="penggantian1" />
+          <ScalarProperty Name="penggantian2" ColumnName="penggantian2" />
+          <ScalarProperty Name="penggantian3" ColumnName="penggantian3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
